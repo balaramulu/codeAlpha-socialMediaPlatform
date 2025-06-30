@@ -1,0 +1,70 @@
+/* Outer container */
+.create-post {
+  max-width: 500px;
+  margin: 80px auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.create-post h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Form styling */
+.create-post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* File input */
+.create-post input.upload-post {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+/* File input button style (for Chrome) */
+.create-post input.upload-post::-webkit-file-upload-button {
+  background: #2575fc;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.create-post input.upload-post::-webkit-file-upload-button:hover {
+  background: #125de3;
+}
+
+/* Bio input */
+.create-post input.post-bio {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Submit button */
+.create-post button {
+  background: #2575fc;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.2s ease;
+}
+
+.create-post button:hover {
+  background: #125de3;
+}

@@ -1,0 +1,190 @@
+/* Whole page wrapper */
+.body{
+  background-color: #f7f7f7;
+}
+.profile-page {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 40px;
+  gap: 40px;
+}
+
+/* Left: photo, name, bio */
+.profile-left {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.profile-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #2575fc;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.profile-Name {
+  margin-top: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+}
+
+.profile-bio {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Right: followers, following, posts */
+.profile-right {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile-Followers,
+.profile-following,
+.profile-no-of-posts {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+  border: 1px solid #ddd;
+}
+
+.profile-Followers p:first-child,
+.profile-following p:first-child,
+.profile-no-of-posts p:first-child {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.profile-Followers p:last-child,
+.profile-following p:last-child,
+.profile-no-of-posts p:last-child {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2575fc;
+}
+
+/* Posts area under profile */
+.pots-profile {
+  flex-basis: 100%;
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+/* Example: style for posts container */
+.pots-profile::before {
+  content: "Posts will go here...";
+  color: #999;
+}
+/* Create Post button container */
+.posts-actions {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+/* Create Post button style */
+.create-post-button {
+  background-color: #2575fc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+
+.create-post-button:hover {
+  background-color: #125de3;
+}
+
+/* Container for all posts */
+.posts-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+  margin-top: 30px;
+  background-color: rgb(161, 228, 228);
+}
+
+.post-card {
+  width: 430px;
+  max-width: 90%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+
+/* Post header with profile + username + bio stacked */
+.post-header {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+/* First <p> inside header: profile + username */
+.post-header p:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 6px 0;
+}
+
+/* Profile photo in header */
+.post-header .profile-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Second <p> inside header: bio */
+.post-header p:nth-child(2) {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  padding-left: 50px; /* Indent under profile pic */
+}
+
+/* Post content */
+.post-end img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-end p {
+  padding: 10px 12px;
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
